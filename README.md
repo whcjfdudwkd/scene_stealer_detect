@@ -37,7 +37,7 @@ https://please-amend.tistory.com/260<br>
 - 방법 1에서 추출한 객체를 이미지에 그려본 결과 아래의 이미지와 같은 결과가 발생
 
 ![frame_0000 png](https://github.com/whcjfdudwkd/scene_stealer_detect/assets/70883264/942439bd-bded-4717-8cc8-096b8b335ee4)
- -> 초록색 박스는 객체 / 파랑색 박스는 움직인 객체\
+ <br>-> 초록색 박스는 객체 / 파랑색 박스는 움직인 객체
  
 - YOLOv8n모델에서 검출이 안된 객체가 존재 -> 씬스틸러여도 검출을 못함
 - YOLOv8n모델모다 더 많이 학습된 YOLOv8l모델을 사용해도 같은 문제가 발생할거로 생각됨
