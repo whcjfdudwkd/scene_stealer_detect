@@ -5,6 +5,7 @@
 해당 블로그는 영상의 씬스틸러를 랜덤으로 만든 시선데이터로 검출
 개인적인 생각은 "영상의 객체 움직임 -> 시선이 쏠림 -> 시선 데이터" 로 생각
 따라서 이미지에 움직인 객체가 해당 이미지의 씬스틸러로 간주하여 해당 객체 추출
+<br>
 https://please-amend.tistory.com/260
 <br>
 
@@ -18,7 +19,7 @@ https://please-amend.tistory.com/260
 ## 📌 데이터 분석
 #### 영상데이터 분리 및 프레임(이미지) 추출
 - 영상은 애니매이션 데이터 사용
-https://github.com/whcjfdudwkd/scene_stealer_detect/assets/70883264/fd05848c-9a79-42d9-9e86-8b31b21de9b2
+[애니메이션](https://github.com/whcjfdudwkd/scene_stealer_detect/assets/70883264/6bb13c71-47b1-4c21-a60f-1daedbf7d8a7)
 - 영상의 데이터를 씬 단위로 분리
 - 씬으로 분리된 데이터를 다시 프레임 단위로 분리
 - 프레임 단위 이미지에서 씬스틸러 검출
@@ -34,8 +35,9 @@ https://github.com/whcjfdudwkd/scene_stealer_detect/assets/70883264/fd05848c-9a7
 - cv2.threshold를 사용하여 차프레임을 이진화
 - 여기서 사용한 thresh hold값은 임의로 설정(30)
 - 방법 1에서 추출한 객체를 이미지에 그려본 결과 아래의 이미지와 같은 결과가 발생
-
-[이미지 사진]
+<br>
+![frame_0000 png](https://github.com/whcjfdudwkd/scene_stealer_detect/assets/70883264/942439bd-bded-4717-8cc8-096b8b335ee4)
+<br>
 
 - YOLOv8n모델에서 검출이 안된 객체가 존재 -> 씬스틸러여도 검출을 못함
 - YOLOv8n모델모다 더 많이 학습된 YOLOv8l모델을 사용해도 같은 문제가 발생할거로 생각됨
@@ -56,8 +58,9 @@ https://github.com/whcjfdudwkd/scene_stealer_detect/assets/70883264/fd05848c-9a7
  - 검출된 포인트의 바운딩 박스를 모두 감싸는 새로운 바운딩 박스 생성
  - 해당 바운딩 박스가 해당 프레임의 씬스틸러
  - 방법 2를 사용한 결과는 아래의 이미지와 같다
-
-[이미지]
+<br>
+![frame_0004](https://github.com/whcjfdudwkd/scene_stealer_detect/assets/70883264/264f768e-a6c4-4c3f-992f-d5d34fa17ea6)
+<br>
 
 ## 🐃 평가
  - 해당방법을 이용하니 각 프레임 마다의 씬스틸러를 찾을 수 있었다
@@ -65,8 +68,10 @@ https://github.com/whcjfdudwkd/scene_stealer_detect/assets/70883264/fd05848c-9a7
    <br>-> 두객체가 동시에 움직일 경우
    <br>-> 한 객체에서 한 객체로 움직임이 변화한 경우
  - 2개의 집단에서 클러스터링된 포인트 갯수가 같은 경우 씬스틸러의 박스가 2개가 생기는 문제 발생
+ - 가끔 프레임에서 움직임이 검출안되는 문제 발생
 
 ## ♻️ 추후사항
  - 2개의 집단에서 클러스터링된 포인트 갯수가 같은 경우 2개의 집단의 모든 바운딩 박스를 포함하는 박스를 만들 필요가 존재
+ - 가끔 프레임에서 움직임이 검출안되는 문제를 확인하여 수정 필요
 
    
