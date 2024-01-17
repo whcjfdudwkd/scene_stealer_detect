@@ -18,7 +18,8 @@ https://please-amend.tistory.com/260<br>
 #### 영상데이터 분리 및 프레임(이미지) 추출
 - 영상은 애니매이션 데이터 사용
 
-https://github.com/whcjfdudwkd/scene_stealer_detect/assets/70883264/e6fc27ff-d3eb-43de-abf6-21982fbd22f5
+![poppyes (1)](https://github.com/whcjfdudwkd/scene_stealer_detect/assets/70883264/5c89dc10-bfa8-4eeb-a993-501b27b69fa0)
+
 
 - 영상의 데이터를 씬 단위로 분리
 - 씬으로 분리된 데이터를 다시 프레임 단위로 분리
