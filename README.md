@@ -17,7 +17,9 @@ https://please-amend.tistory.com/260<br>
 ## 📌 데이터 분석
 #### 영상데이터 분리 및 프레임(이미지) 추출
 - 영상은 애니매이션 데이터 사용
+
 [애니메이션](https://github.com/whcjfdudwkd/scene_stealer_detect/assets/70883264/6bb13c71-47b1-4c21-a60f-1daedbf7d8a7)
+
 - 영상의 데이터를 씬 단위로 분리
 - 씬으로 분리된 데이터를 다시 프레임 단위로 분리
 - 프레임 단위 이미지에서 씬스틸러 검출
