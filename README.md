@@ -33,9 +33,8 @@ https://please-amend.tistory.com/260<br>
 - cv2.threshold를 사용하여 차프레임을 이진화
 - 여기서 사용한 thresh hold값은 임의로 설정(30)
 - 방법 1에서 추출한 객체를 이미지에 그려본 결과 아래의 이미지와 같은 결과가 발생
-<br>
+
 ![frame_0000 png](https://github.com/whcjfdudwkd/scene_stealer_detect/assets/70883264/942439bd-bded-4717-8cc8-096b8b335ee4)
-<br>
 
 - YOLOv8n모델에서 검출이 안된 객체가 존재 -> 씬스틸러여도 검출을 못함
 - YOLOv8n모델모다 더 많이 학습된 YOLOv8l모델을 사용해도 같은 문제가 발생할거로 생각됨
@@ -56,9 +55,9 @@ https://please-amend.tistory.com/260<br>
  - 검출된 포인트의 바운딩 박스를 모두 감싸는 새로운 바운딩 박스 생성
  - 해당 바운딩 박스가 해당 프레임의 씬스틸러
  - 방법 2를 사용한 결과는 아래의 이미지와 같다
-<br>
+
 ![frame_0004](https://github.com/whcjfdudwkd/scene_stealer_detect/assets/70883264/264f768e-a6c4-4c3f-992f-d5d34fa17ea6)
-<br>
+
 
 ## 🐃 평가
  - 해당방법을 이용하니 각 프레임 마다의 씬스틸러를 찾을 수 있었다
