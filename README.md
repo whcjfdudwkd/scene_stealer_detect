@@ -18,7 +18,7 @@ https://please-amend.tistory.com/260<br>
 #### 영상데이터 분리 및 프레임(이미지) 추출
 - 영상은 애니매이션 데이터 사용
 
-[애니메이션](https://github.com/whcjfdudwkd/scene_stealer_detect/assets/70883264/6bb13c71-47b1-4c21-a60f-1daedbf7d8a7)
+[애니메이션](https://github.com/whcjfdudwkd/scene_stealer_detect/assets/70883264/d2bdf52b-0b99-4bdf-ac6d-da30f83e2a79)
 
 - 영상의 데이터를 씬 단위로 분리
 - 씬으로 분리된 데이터를 다시 프레임 단위로 분리
@@ -37,7 +37,8 @@ https://please-amend.tistory.com/260<br>
 - 방법 1에서 추출한 객체를 이미지에 그려본 결과 아래의 이미지와 같은 결과가 발생
 
 ![frame_0000 png](https://github.com/whcjfdudwkd/scene_stealer_detect/assets/70883264/942439bd-bded-4717-8cc8-096b8b335ee4)
-
+ -> 초록색 박스는 객체 / 파랑색 박스는 움직인 객체\
+ 
 - YOLOv8n모델에서 검출이 안된 객체가 존재 -> 씬스틸러여도 검출을 못함
 - YOLOv8n모델모다 더 많이 학습된 YOLOv8l모델을 사용해도 같은 문제가 발생할거로 생각됨
 - 만약 YOLOv8l모델이 객체를 많이 추출해도 어떤 객체가 씬스틸러인지 구별 불가
